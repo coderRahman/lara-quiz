@@ -136,8 +136,6 @@
 
   $(document).ready(function() {
 
-   
-
       // csrf token setup for ajax request
       $.ajaxSetup({
             headers:
@@ -149,8 +147,12 @@
           (116 == (e.which || e.keyCode) || 82 == (e.which || e.keyCode)) && e.preventDefault()
       }
 
-    $(document).on("keydown", fFive);
+      $(document).on("keydown", fFive);
 
+      // Disable inspect element
+      $(document).bind("contextmenu",function(e) {
+        e.preventDefault();
+      });
   
       $(".myQuestion:first-child").addClass("active");
 
