@@ -1,0 +1,20 @@
+
+.quiz-card {
+    padding: 5px 20px 20px 20px;
+    box-shadow: 0 7px 15px 0 rgba(0,0,0,0.1);
+    background-color: #FFF;
+    border-top: 3px solid rgba(38, 166, 154, 0.7);
+  }
+
+  .quiz-card ul{
+    padding-left: 0px;
+  }
+
+  ul li{
+    list-style: none;
+  }
+
+  .topic-detail li{
+    display: flex;
+    justify-content: space-between;
+  }
